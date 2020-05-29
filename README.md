@@ -10,3 +10,4 @@ I want to model this dataset as an Apache Cassandra keyspace. I then want to cre
 
 ## Keyspace
 
+![erd](files/sparkify-cassandra-erd.png)
