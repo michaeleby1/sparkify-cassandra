@@ -31,6 +31,6 @@ We therefore want to use `(session_id, item_in_session)` as our primary key.
 This schema can be replicated and populated by running the below two scripts:
 
 - <b>create_tables.py</b>: This script creates and connects to a database named `sparkifydb` and creates the three tables via the <b>cql_queries.py</b> file (CQL is the Cassandra query language).
-- <b>etl.py</b>: This script connects to the database, extracts and transforms the CSV filess into a single CSV file, and loads the data into the database according to the schema—also via the <b>cql_queries.py</b> file.
+- <b>etl.py</b>: This script connects to the database, extracts and transforms the CSV files into a single CSV file, and loads the data into the database according to the schema—also via the <b>cql_queries.py</b> file.
 
 The notebook <b>test.ipyb</b> allows for testing the database connection and running CQL queries on it.
