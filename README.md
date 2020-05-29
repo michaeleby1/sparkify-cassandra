@@ -14,7 +14,17 @@ I want to model this dataset as an Apache Cassandra keyspace. I then want to cre
 
 There are three tables in the keyspace:
 
-1. 
+1. `music_app_history`: We are looking for all users that listened to song_title = 'All Hangs Against His Own."
+
+We therefore want to use `(song_title, user_id)` as our primary key. 
+
+2. `user_library`: We are looking for the user info and song metadata where user_id = 10 and session_id = 182.
+
+We therefore want to use `(user_id, session_id, item_in_session)` as our primary key. 
+
+3. `song_library`: We are looking for the song metadata where session_id = 338 and item_in_session = 4.
+
+We therefore want to use `(session_id, item_in_session)` as our primary key. 
 
 ## Project Organization
 
